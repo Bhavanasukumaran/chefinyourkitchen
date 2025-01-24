@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53A10B66-D166-4F38-9AD6-587E0DCB7D2C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Chef_in_your_kitchen</RootNamespace>
+    <AssemblyName>Chef_in_your_kitchen</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admindashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admindashboard.Designer.cs">
+      <DependentUpon>admindashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chefdashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chefdashboard.Designer.cs">
+      <DependentUpon>chefdashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chefregistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chefregistration.Designer.cs">
+      <DependentUpon>chefregistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deliverypartnerdashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deliverypartnerdashboard.Designer.cs">
+      <DependentUpon>deliverypartnerdashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deliverypregistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deliverypregistration.Designer.cs">
+      <DependentUpon>deliverypregistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="marketdashoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marketdashoard.Designer.cs">
+      <DependentUpon>marketdashoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="organizationdashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="organizationdashboard.Designer.cs">
+      <DependentUpon>organizationdashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="organizationregistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="organizationregistration.Designer.cs">
+      <DependentUpon>organizationregistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentOptions.Designer.cs">
+      <DependentUpon>PaymentOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RateChef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RateChef.Designer.cs">
+      <DependentUpon>RateChef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmitComplaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmitComplaint.Designer.cs">
+      <DependentUpon>SubmitComplaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userdashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userdashboard.Designer.cs">
+      <DependentUpon>userdashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userregistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userregistration.Designer.cs">
+      <DependentUpon>userregistration.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admindashboard.resx">
+      <DependentUpon>admindashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chefdashboard.resx">
+      <DependentUpon>chefdashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chefregistration.resx">
+      <DependentUpon>chefregistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deliverypartnerdashboard.resx">
+      <DependentUpon>deliverypartnerdashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deliverypregistration.resx">
+      <DependentUpon>deliverypregistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marketdashoard.resx">
+      <DependentUpon>marketdashoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="organizationdashboard.resx">
+      <DependentUpon>organizationdashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="organizationregistration.resx">
+      <DependentUpon>organizationregistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userdashboard.resx">
+      <DependentUpon>userdashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userregistration.resx">
+      <DependentUpon>userregistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chef in your Kitchen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitchen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\star_empty.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
